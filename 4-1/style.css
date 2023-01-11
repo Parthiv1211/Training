@@ -1,0 +1,62 @@
+
+*{
+     box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+}
+#main-page{
+     border: 1px solid red;
+     display: flex;
+     justify-content: center;
+     height: 100vh;
+     align-items: center;
+}
+#card{
+     border: 1px solid blue;
+     display: flex;
+     width: 457px;
+     height: 138px;
+     justify-content:start;
+     align-items: center;
+     padding: 4px;
+     font-family: 'Roboto';
+}
+
+#profile-pic{
+     width: 130px;
+     height: 130px;
+}
+
+#personal-tweet
+{
+     margin-left: 14px;
+}
+
+#user-name{
+     margin-top: 10px;
+     margin-bottom: 14px;
+     font-size: 20px;
+     font-weight:700;
+     color: #000000;
+}
+#user-tweet{
+     font-size: 20px;
+     margin-bottom: 24px;
+     font-weight: 400;
+}
+
+.fa{
+     font-size: 20px;
+     color: #858991;
+
+}
+
+
+.public-text{
+     color: #858991;
+     display: inline;
+     font-size: 15px;
+     font-weight: 500;
+     margin-right: 24px;
+     margin-left: 14px;
+}

@@ -1,0 +1,72 @@
+*
+{
+     box-sizing: border-box;
+}
+
+body
+{
+     background-color:lightyellow;
+}
+
+h1{
+     background-color:darkred;
+     font-style: italic;
+     letter-spacing: 7px;
+     text-align: center;
+}
+
+h2{
+     color: white;
+     background-color: green;
+     padding-left: 20px;
+}
+
+span{
+     font-weight: bold;
+     text-transform:uppercase;
+     font-style: italic;
+}
+#outline{
+     color: red;
+     font-style: italic;
+     padding-left: 25px;
+}
+a{
+     color:purple;
+     text-decoration: none;
+}
+
+img{
+     width: 700px;
+     height:200px;
+     object-fit: cover;
+     border: 2px dashed;
+     color: gray;
+}
+
+h3{
+     color: gray;
+}
+
+table{
+     background-color:lightgray;
+}
+
+label,input{
+     display: block;
+}
+
+label
+{
+     margin: 15px 0px;
+}
+
+textarea{
+     overflow: scroll;
+     height: 100px;
+}
+
+input[type="radio"] , label[for="gender"]{
+     display: inline;
+     line-height: 40px;
+}

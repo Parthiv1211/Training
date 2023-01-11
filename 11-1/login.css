@@ -1,0 +1,101 @@
+@font-face {
+     font-family: Quicksand-Bold;
+     src: url('font/Quicksand-Bold.ttf');
+}
+
+@font-face {
+     font-family: Quicksand-Light;
+     src: url('font/Quicksand-Light.ttf');
+}
+
+@font-face {
+     font-family: Quicksand-Medium;
+     src: url('font/Quicksand-Medium.ttf');
+}
+
+@font-face {
+     font-family: Quicksand-Regular;
+     src: url('font/Quicksand-Regular.ttf');
+}
+
+@font-face {
+     font-family: Quicksand-SemiBold;
+     src: url('font/Quicksand-SemiBold.ttf');
+}
+
+*
+{
+     box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+}
+body
+{
+     display: flex;
+     flex-direction: column;
+     height: 100vh;
+     background-color: #EEEEEE;
+}
+body > footer
+{
+     margin-top: auto;
+}
+body > header
+{
+     background: url(icons/header\ pattern\ svg.svg);
+     padding: 7px;
+     padding-left: 20px;
+     border-bottom: 4px solid #31B9E4;
+}
+
+section
+{
+     width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer
+{
+     margin-top: auto;
+     text-align: center;
+     /* align-items: center; */
+}
+footer > div
+{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px;
+     background-color:#E0E1E1;
+}
+footer > div > p
+{
+     margin-left: 5px;
+     word-spacing: 5px;
+}
+#contact
+{
+     color: #1F7A54;
+     font-weight:600;
+}
+
+
+
+
+
+
