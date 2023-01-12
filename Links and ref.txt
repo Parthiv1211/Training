@@ -6,3 +6,16 @@ https://www.w3schools.com/cssref/pr_font_font.php
 https://www.youtube.com/watch?v=G0cOQ79WKZE
 
 https://medium.com/wolox/8-tips-to-keep-css-organized-1c7e0bcaa905
+
+
+Specification https://xd.adobe.com/view/c8dc4fb8-01ae-4826-9a50-e8a05bc2a8e7-9d8f/
+Assets:
+https://drive.google.com/drive/folders/1cXzTFbw7kCuo3kQc8qEEWr2elIE9os79?usp=sharing
+
+Agile course - http://growingagile.thinkific.com/courses/scrumbasics 
+
+How browsers work - https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/ 
+
+CSS preprocessor  Sass with SCSS - https://www.youtube.com/watch?v=Zz6eOVaaelI
+Build Components in HTML, CSS & JS	https://scrimba.com/learn/buildcomponents
+Accessibility course - https://www.udacity.com/course/web-accessibility--ud891
