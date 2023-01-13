@@ -8,56 +8,194 @@
      <link rel="stylesheet" href="/dashboard.css">
 </head>
 <body>
-     <header>
-          <div id="header-logo"><img src="/icons/logo used in header.svg" alt=""></div>
-          <ul>
-               <a href="#" style="text-decoration: none; color: #ffffff">
-                    <li>DASHBOARD</li>
-               </a>
+
+     <div id="maincontainer">
+          <header>
+               <div id="header-logo"><img src="/icons/logo used in header.svg" alt=""></div>
+               <ul>
+                    <li class="shrink" id="active-link">Dashboard</li>
+                    <li class="shrink">CONTENT</li>
+                    <li class="shrink">USERS</li>
+                    <li class="shrink">REPORTS</li>
+                    <li class="shrink">ADMIN</li>
+                    <li class="shrink-open"><img src="/icons/hamburger-menu.svg" alt=""></li>
+                    <li><img src="/icons/alerts.svg" alt=""></li>
+                    <li><img src="/icons/announcements.svg" alt=""></li>
+                    <li><img src="/icons/profile.svg" alt=""></li>
+               </ul>
+          </header>
+
+          <section>
+
+               <div class="categeory">
+                    <div class="course">
+                         <img src="/icons/courses.svg" alt="img">
+                         <p><span style="font-size: 25px; font-weight: 600;">4</span> Courses</p>
+                    </div>
+                    <div class="classes">
+                         <img src="/icons/classes.svg" alt="">
+                         <p><span style="font-size: 25px; font-weight: 600;">4</span> Classes</p>
+                    </div>
+               </div>
+
+
+               <div class="filter">
+                    <div class="filter-result" style="opacity: 0.5;">Showing 4 of 4 Courses</div>
+                    <div class="sort">
+                         <div style="opacity: 0.5;">Sort By: </div>
+                         <div class="sort-filter-type">
+                              <div>Course Name</div>
+                              <img src="icons/arrow-down.svg" alt="">
+                         </div>
+                         <div><img src="icons/sort.svg" alt=""></div>
+                    </div>
+               </div>
+
+
+
+               <div class="container">
+                    <div class="card">
+                         <div class="item">
+                              <div><img src="/images/imageMask-1.svg" alt=""></div>
+                              <div class="item-text">
+                                   <p id="input-text">Acceleration</p>
+                                   <p>Physics | Grade 7 <span style="font-weight: 600; color: #1F7A54;">+2</span></p>
+                                   <ul>
+                                        <li><span style="font-weight: 600;">4</span> Units</li>
+                                        <li><span style="font-weight: 600;">18</span> Lessons</li>
+                                        <li><span style="font-weight: 600;">24</span> Topics</li>
+                                   </ul>
+                                   <div class="class-type">
+                                        <div>Mr. Frank's Class B</div>
+                                        <img src="icons/arrow-down.svg" alt="">
+                                   </div>
+                                   <p>50 Students | 21-Jan-2020 - 21-Aug-2020</p>
+                    
+                              </div>
+                              <div class="item-fav"><img src="icons/favourite.svg" alt=""></div>
+                         </div>
+                         <hr>
+                         <div class="item-report">
+                              <img src="/img/preview.svg" alt="">
+                              <img src="/img/manage course.svg" alt="">
+                              <img src="/img/grade submissions.svg" alt="">
+                              <img src="/img/reports.svg" alt="">
+                         </div>
+                    </div>
+
+
+                    <div class="card">
+                         <div class="item">
+                              <div><img src="/images/imageMask-2.svg" alt=""></div>
+                              <div class="item-text">
+                                   <p id="input-text">Displacement, Velocity and Speed</p>
+                                   <p>Physics 2 | Grade 6 <span style="font-weight: 600; color: #1F7A54;">+3</span></p>
+                                   <ul>
+                                        <li><span style="font-weight: 600;">2</span> Units</li>
+                                        <li><span style="font-weight: 600;">15</span> Lessons</li>
+                                        <li><span style="font-weight: 600;">20</span> Topics</li>
+                                   </ul>
+                                   <div class="class-type">
+                                        <div style="opacity: 0.5;">No Classes</div>
+                                        <img src="icons/arrow-down.svg" alt="">
+                                   </div>
+                    
+                              </div>
+                              <div class="item-fav"><img src="icons/favourite.svg" alt=""></div>
+                         </div>
+                         <hr>
+                         <div class="item-report">
+                              <img src="/img/preview.svg" alt="">
+                              <img style="opacity: 0.5;"src="/img/manage course.svg" alt="">
+                              <img style="opacity: 0.5;"src="/img/grade submissions.svg" alt="">
+                              <img src="/img/reports.svg" alt="">
+                         </div>
+                    </div>
+
+                    <div class="card">
+                         <div class="item">
+                              <div><img src="/images/imageMask.svg" alt=""></div>
+                              <div class="item-text">
+                                   <p id="input-text">Introduction to Biology: Micro organisms and how they affec...</p>
+                                   <p>Biology | Grade 6 <span style="font-weight: 600; color: #1F7A54;">+1</span></p>
+                                   <ul>
+                                        <li><span style="font-weight: 600;">5</span> Units</li>
+                                        <li><span style="font-weight: 600;">16</span> Lessons</li>
+                                        <li><span style="font-weight: 600;">22</span> Topics</li>
+                                   </ul>
+                                   <div class="class-type">
+                                        <div>All Classes</div>
+                                        <img src="icons/arrow-down.svg" alt="">
+                                   </div>
+
+                                   <p>300 Students</p>
+
+                    
+                              </div>
+                              <div class="item-fav"><img src="icons/favourite.svg" alt=""></div>
+                         </div>
+                         <hr>
+                         <div class="item-report">
+                              <img src="/img/preview.svg" alt="">
+                              <img style="opacity: 0.5;"src="/img/manage course.svg" alt="">
+                              <img style="opacity: 0.5;"src="/img/grade submissions.svg" alt="">
+                              <img src="/img/reports.svg" alt="">
+                         </div>
+                    </div>
+
+
+                    <div class="card">
+                         <div class="expired">EXPIRED</div>
+                         <div class="item">
+                              <div><img src="/images/imageMask-3.svg" alt=""></div>
+                              <div class="item-text">
+                                   <p id="input-text">Introduction to High School Mathematics</p>
+                                   <p>Mathematics | Grade 8 <span style="font-weight: 600; color: #1F7A54;">+3</span></p>
+                                   
+                                   <div class="class-type">
+                                        <div>Mr. Frank's Class A</div>
+                                        <img src="icons/arrow-down.svg" alt="">
+                                   </div>
+
+                                   <p>44 Students | 14-Oct-2019 - 20-Oct-2020</p>
+
+                    
+                              </div>
+                              <div class="item-fav"><img style="filter: invert(50%); opacity: 0.2;" src="icons/favourite.svg" alt=""></div>
+                         </div>
+                         <hr>
+                         <div class="item-report">
+                              <img src="/img/preview.svg" alt="">
+                              <img src="/img/manage course.svg" alt="">
+                              <img src="/img/grade submissions.svg" alt="">
+                              <img src="/img/reports.svg" alt="">
+                         </div>
+                    </div>
+
+               </div>
+
                
-               <li>CONTENT</li>
-               <li>USERS</li>
-               <li>REPORTS</li>
-               <li>ADMIN</li>
-               <li></li>
-               <li></li>
-               <li></li>
-          </ul>
-     </header>
+          </section>
 
-
-
-
-
+          <footer>
+               <a class="contact" style="font-family: Quicksand-Medium;">About</a>
+               <span style="font-size: 30px; opacity: 0.1;">|</span>
+               <a class="contact" style="font-family: Quicksand-Medium;">Contact Us</a>
      
-     <section>
-          
-     </section>     
+               <br><br>
+               <div>
+                    <img src="/icons/logo used in footer.svg" alt="">
+                    <span style="font-size: 30px; opacity: 0.1; margin: 0px 10px;">|</span>
+     
+                    <p> <span style="font-family: Quicksand-Medium;">Copyright &copy; 2020-2021</span> <span style="font-family: Quicksand-Bold;"> Zeus Systems PVT.Ltd.</span> <span style="font-family: Quicksand-Medium;">All rights resevred.</span></p>
+               </div>
+          </footer>
+     </div>
 
 
 
 
 
-
-
-
-
-
-
-
-
-     <footer>
-          <a class="contact" style="font-family: Quicksand-Medium;">About</a>
-          <span style="font-size: 30px; opacity: 0.1;">|</span>
-          <a class="contact" style="font-family: Quicksand-Medium;">Contact Us</a>
-
-          <br><br>
-          <div>
-               <img src="/icons/logo used in footer.svg" alt="">
-               <span style="font-size: 30px; opacity: 0.1; margin: 0px 10px;">|</span>
-
-               <p> <span style="font-family: Quicksand-Medium;">Copyright &copy; 2020-2021</span> <span style="font-family: Quicksand-Bold;"> Zeus Systems PVT.Ltd.</span> <span style="font-family: Quicksand-Medium;">All rights resevred.</span></p>
-          </div>
-     </footer>
 </body>
+
 </html>

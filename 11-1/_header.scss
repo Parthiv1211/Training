@@ -1,0 +1,33 @@
+@mixin maincontainer($w)
+{
+     display: flex;
+     height: 100vh;
+     flex-direction: column;
+     width: $w;
+     margin-left: auto;
+     margin-right: auto;
+}
+
+*
+{
+     margin: 0px;
+     padding:0px;
+     box-sizing: border-box;
+}
+body
+{
+     background-color:#EEEEEE;
+     font-family: 'Quicksand-Medium';
+}
+
+
+header
+{
+     background-image: url("/icons/header\ pattern\ svg.svg");
+     display: flex;
+}
+
+header > div
+{
+     margin: 5px;
+}

@@ -1,0 +1,159 @@
+@font-face {
+  font-family: Quicksand-Bold;
+  src: url("font/Quicksand-Bold.ttf");
+}
+@font-face {
+  font-family: Quicksand-Light;
+  src: url("font/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: Quicksand-Medium;
+  src: url("font/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: Quicksand-Regular;
+  src: url("font/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: Quicksand-SemiBold;
+  src: url("font/Quicksand-SemiBold.ttf");
+}
+footer {
+  margin-top: auto;
+  text-align: center;
+}
+
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #E0E1E1;
+}
+
+footer > div > p {
+  word-spacing: 5px;
+}
+
+.contact {
+  color: #1F7A54;
+  font-weight: 600;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EEEEEE;
+  font-family: "Quicksand-Medium";
+}
+
+header {
+  background-image: url("/icons/header pattern svg.svg");
+  display: flex;
+}
+
+header > div {
+  margin: 5px;
+}
+
+#maincontainer {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  font-family: "Quicksand-Medium";
+  border-top: 5px solid #3AC7EC;
+  font-size: 15px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 488px;
+  margin: 50px auto;
+  margin-bottom: 25px;
+  padding: 15px 32px;
+}
+
+.title {
+  color: #222222;
+  display: flex;
+}
+.title img {
+  width: 20px;
+}
+.title h1 {
+  margin-left: 77px;
+  font-family: "Quicksand-Medium";
+}
+
+.qualification {
+  color: #333333;
+  margin-top: 30px;
+  display: flex;
+  line-height: 24px;
+}
+.qualification p {
+  margin: 0px 10px;
+}
+
+.input #state, .input #district, .input #username, .input #password, .input #remember {
+  color: #666666;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.input #state #head-text, .input #district #head-text, .input #username #head-text, .input #password #head-text, .input #remember #head-text {
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.input #password > p > img, .input #state > p > img, .input #district > p > img {
+  float: right;
+}
+
+#username {
+  margin-top: 40px;
+}
+
+#remember {
+  display: flex;
+  margin-top: 25px;
+  flex-direction: row;
+  line-height: 24px;
+  color: #222222;
+  font-weight: bold;
+}
+#remember img {
+  /* display: inline; */
+  height: 24px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+#forgot {
+  margin-top: 5px;
+  margin-left: auto;
+  color: #1F7A54;
+  text-transform: uppercase;
+  opacity: 1;
+  font-weight: 500;
+}
+
+button {
+  width: 215px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2392156863);
+  background: #3FD28B 0% 0% no-repeat padding-box;
+}/*# sourceMappingURL=index.css.map */
