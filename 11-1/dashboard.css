@@ -69,25 +69,31 @@ header > div {
   margin-right: auto;
 }
 
+header img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
 }
 header ul #active-link {
   color: #FFFFFF;
-  margin-bottom: 0px;
-  padding-bottom: 15px;
   border-bottom: 5px solid white;
 }
 header ul li {
   color: #3FD28B;
   font-weight: 300;
   text-shadow: #3FD28B;
-  float: left;
   list-style-type: none;
-  margin: 15px 20px;
+  margin: 15px 1vw;
   font-weight: 500;
 }
-header ul .shrink-open {
+
+.shrink-open {
   display: none;
 }
 
@@ -218,16 +224,13 @@ section {
   justify-content: space-evenly;
   padding-top: 25px;
 }
-.container .item-report img {
-  margin: 0px 50px;
-}
 
-@media only screen and (max-width: 1328px) {
-  .container {
-    grid-template-columns: 1fr;
+@media only screen and (max-width: 900px) {
+  header > ul > li {
+    margin: 15px 0.5vw;
   }
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 950px) {
   .container {
     grid-template-columns: 1fr;
   }
@@ -237,10 +240,8 @@ section {
   .shrink-open {
     display: block;
   }
-}
-@media only screen and (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
+  #maincontainer {
+    width: 90%;
   }
   .card {
     flex-basis: 200px;
