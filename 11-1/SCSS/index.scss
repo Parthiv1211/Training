@@ -1,0 +1,228 @@
+@import 'font';
+@import 'footer';
+@import 'header';
+
+#maincontainer
+{
+     @include maincontainer(65%);    
+     font-family: 'Quicksand-Medium';
+}
+
+
+
+section
+{
+     font-family: 'Quicksand-Medium';
+
+     border-top: 5px solid #3AC7EC;
+     font-size: 15px;
+     background-color:white;
+     display: flex;
+     flex-direction: column;
+     width: 488px;
+     margin: 50px auto;
+     margin-bottom: 25px;
+     padding: 15px  32px;
+     // text-align: center;
+     // align-items: center;
+}
+.title
+{
+     color: #222222;
+     display: flex;
+     
+     img
+     {
+          width: 20px;
+          
+     }
+     h1
+     {
+          margin-left: 77px;
+          font-family: 'Quicksand-Medium';
+     }
+}
+
+
+.qualification
+{
+     color: #333333;
+     margin-top: 30px;
+     display: flex;
+     font-weight: 600;
+     
+     .radio-item {
+       display: inline-block;
+       position: relative;
+       padding-right: 15px;
+       margin: 10px 5px;
+     }
+     
+     .radio-item input[type='radio'] {
+       display: none;
+     }
+     
+     .radio-item label:before {
+       content: "";
+       display: inline-block;
+       position: relative;
+       top: 4px;
+       left: -10px;
+       width: 18px;
+       height: 18px;
+       border-radius: 50%;
+       border: 2px solid #1F7A54;
+       background-color: transparent;
+     }
+     
+     .radio-item input[type=radio]:checked + label:after {
+       border-radius: 11px;
+       width: 12px;
+       height: 12px;
+       position: absolute;
+       top: 8.5px;
+       left: -5.5px;
+       content: "";
+       display: block;
+       background: #1F7A54;
+
+     }
+}
+
+.input
+{
+     margin-top: 4px;
+     select
+     {
+          width: 100%;
+          border: none;
+          border-bottom: 2px solid black;
+          padding:4px 0px;  
+          outline: none;
+          font-weight: 600; 
+          color: black;
+          font-family: 'Quicksand-Medium';
+          font-size: 15px;
+     }
+     label
+     {
+          font-size: 14px;
+     }
+     #username > input , #password > input
+     {
+          width: 100%;
+          border: none;
+          border-bottom: 2px solid black;
+          padding:4px 0px;  
+          outline: none;
+          color: #666666;
+          font-family: 'Quicksand-Medium';
+          font-weight: 600;
+          margin-top: 25px;
+     }
+     #username > a , #password > a
+     {
+          display: block;
+          float: right;
+          text-decoration: none;
+     }
+     #state,#district,#username,#password,#remember
+     {
+          margin:  15px 0px; 
+     }
+
+}
+
+
+#remember
+{
+     margin-top: 25px;
+     color: #222222;
+     font-weight: bold;
+     font-family: 'Quicksand-Medium';
+     
+     .container {
+       display: block;
+       position: relative;
+       padding-left: 35px;
+       margin-bottom: 12px;
+       font-size: 15px;
+     }
+     
+     .container input {
+       height: 0;
+       width: 0;
+     }
+     
+     .checkmark {
+       position: absolute;
+       left: 0; 
+       height: 20px;
+       width: 20px;
+       background-color: #c5cbc9;
+     }
+     
+     
+     .container input:checked ~ .checkmark {
+       background-color: #1F7A54;
+     }
+     
+     .checkmark:after {
+       content: "";
+       position: absolute;
+       display: none;
+     }
+     
+     .container input:checked ~ .checkmark:after {
+       display: block;
+     }
+     
+     .container .checkmark:after {
+       left: 7px;
+       top: 2px;
+       width: 5px;
+       height: 10px;
+       border: solid white;
+       border-width: 0 3px 3px 0;
+       transform: rotate(45deg);
+     }
+}
+
+
+
+#forgot
+{
+     margin-top: 5px;
+     margin-left: auto;
+     color:#1F7A54;
+     text-transform: uppercase;
+     opacity: 1;
+     font-weight:500;
+}
+
+
+input[type="submit"]{
+     width: 215px;
+     margin-left:  auto;
+     margin-right:  auto;
+     margin-top: 35px;
+     padding: 10px;
+     outline: none;
+     border: none;
+     box-shadow: 0px 3px 5px #0000003D;
+     background: #3FD28B 0% 0% no-repeat padding-box;
+}
+
+
+#footer_vertical
+{
+     font-size: 30px; opacity: 0.1; margin: 0px 10px;
+
+}
+
+#footer_bold
+{
+     font-family: 'Quicksand-Bold';
+     font-weight: 600;
+}
+

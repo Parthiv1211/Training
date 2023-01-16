@@ -11,7 +11,8 @@
 
 #maincontainer
 {
-     @include maincontainer(80%)
+     @include maincontainer(80%);
+     font-family:'Quicksand-Medium';
 }
 
 header
@@ -72,6 +73,12 @@ section
           padding: 20px;
           border-bottom: 4px solid;
           width: 50%;
+
+          p > span
+          {
+              display: inline;
+
+          }
      }
      .classes
      {
@@ -79,6 +86,26 @@ section
           padding: 20px;
           width: 50%;
      }
+}
+
+#categeory_font
+{
+     font-size: 25px; font-weight: 600;
+}
+
+#opacity_less
+{
+     opacity: 0.5;
+}
+
+.grade_point
+{
+     font-weight: 600; color: #1F7A54;
+}
+
+.item-text > ul > li >span
+{
+     font-weight: 600;
 }
 
 
@@ -96,20 +123,35 @@ section
           margin-top: 15px;
           margin-left: auto;
           display: flex;
+          justify-content: space-between;
           margin-right: 5px;
      }
      
-     .sort-filter-type
-     {
-          margin-left: 8px;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          border-bottom: 2px solid rgb(6, 6, 5);
-     }
+}
+#class_item_sort > select   
+{
+     background-color: #EEEEEE;
 }
 
-
+.class-type
+{
+     select
+     {
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid black;
+          padding:4px 0px;  
+          outline: none;
+          font-weight: 600; 
+          color: black;
+          font-family: 'Quicksand-Medium';
+          font-size: 15px;
+     } 
+     #class_item_no
+     {
+          opacity: 0.5;
+     }         
+}
 
 .container
 {
@@ -187,26 +229,16 @@ section
           
           }
           
-          .class-type
-          {
-               display: flex;
-               align-items: center;
-               border-bottom: 2px solid rgb(6, 6, 5);
-               font-size: 15px;
-               margin-top: 15px;
-               margin-bottom: 8px;
-               font-weight: 600;
-               img
-               {
-                    margin-left: auto;
-               }
           
-          }
           
           
           .item-fav
           {
                margin-left: auto;
+               #unfav
+               {
+                    filter: invert(50%); opacity: 0.2;
+               }
           }
           
      }
@@ -217,6 +249,18 @@ section
           justify-content: space-evenly;
           padding-top: 25px;
      }
+}
+
+#footer_vertical
+{
+     font-size: 30px; opacity: 0.1; margin: 0px 10px;
+
+}
+
+#footer_bold
+{
+     font-family: 'Quicksand-Bold';
+     font-weight: 600;
 }
 
 @media only screen and (max-width: 900px)
@@ -246,5 +290,9 @@ section
      .card
      {
           flex-basis: 200px;
+     }
+     header > ul > li
+     {
+          margin: 25px 0.5vw;
      }
 }

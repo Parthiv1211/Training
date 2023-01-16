@@ -19,3 +19,9 @@ How browsers work - https://www.html5rocks.com/en/tutorials/internals/howbrowser
 CSS preprocessor  Sass with SCSS - https://www.youtube.com/watch?v=Zz6eOVaaelI
 Build Components in HTML, CSS & JS	https://scrimba.com/learn/buildcomponents
 Accessibility course - https://www.udacity.com/course/web-accessibility--ud891
+
+
+Introduction to Javascript https://scrimba.com/learn/introductiontojavascript
+Intro to ES6	https://scrimba.com/learn/introtoes6
+Intro to Type Script 	https://scrimba.com/learn/intrototypescript
+https://code.tutsplus.com/tutorials/24-javascript-best-practices-for-beginners--net-5399    
