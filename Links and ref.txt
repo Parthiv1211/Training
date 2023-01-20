@@ -25,3 +25,7 @@ Introduction to Javascript https://scrimba.com/learn/introductiontojavascript
 Intro to ES6	https://scrimba.com/learn/introtoes6
 Intro to Type Script 	https://scrimba.com/learn/intrototypescript
 https://code.tutsplus.com/tutorials/24-javascript-best-practices-for-beginners--net-5399    
+
+
+introduction to JSON -  https://www.youtube.com/watch?v=iiADhChRriM 
+HTML string template - https://wesbos.com/template-strings-html 

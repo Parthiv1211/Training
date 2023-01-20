@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+     <div class="maincontainer">
+          <header>
+               <div id="header-logo"><img src="icons/logo used in header.svg" alt=""></div>
+          </header>
+
+          <form action="dashboard.html">
+               <section>
+                         <div class="title">
+                              <img src="img/back.svg" alt="Back button">
+                              <h1>Log in with Quantum</h1>
+                         </div>
+                         <div class="qualification">
+                              <div class="radio-item">
+                                   <input type="radio" id="ritema" name="ritem" value="District">
+                                   <label for="ritema">District</label>
+                               </div>
+               
+                               <div class="radio-item">
+                                   <input type="radio" id="ritemb" name="ritem" value="Independent school">
+                                   <label for="ritemb">Independent school</label>
+                               </div>
+                         </div>
+                         <div class="input">
+                              <div id="state">
+                                   <label for="state">state*</label>
+                                   <select name="state" id="state">
+                                        <option value="Alabama">Alabama</option>
+                                        <option value="Other">Other</option>
+                                   </select>
+                              </div>
+                              <div id="district">
+                                   <label for="district">District*</label>
+                                   <select name="district" id="district">
+                                        <option value="Alabama School District">Alabama School District</option>
+                                        <option value="Other">Other</option>
+                                   </select>
+                              </div>
+                              <div id="username">
+                                   <input name="username" type="text" placeholder="Username/Email-id*">
+                                   <a href="#">
+                                        <p id="forgot">Forgot username?</p>
+                                   </a>
+                              </div>
+                              <div id="password">
+                                   <input name="password" type="password" placeholder="Password*">
+                                   <a href="#">
+                                        <p id="forgot">Forgot Password?</p>
+                                   </a>
+                              </div>
+                         </div>
+                         <div id="remember">
+                              <label class="container">Remember Me
+                                   <input type="checkbox">
+                                   <span class="checkmark"></span>
+                              </label>
+                         </div>
+                         <input type="submit" style="font-weight: 500;" value="LOG IN"></input>
+               </section>
+          </form>
+          
+          <footer>
+               <a class="contact" >About</a>
+               <span id="footer_vertical">|</span>
+               <a class="contact">Contact Us</a>
+     
+               <br><br>
+               <div>
+                    <img src="icons/logo used in footer.svg" alt="">
+                    <span id="footer_vertical">|</span>
+     
+                    <p> <span >Copyright &copy; 2020-2021</span> <span id="footer_bold"> Zeus Systems PVT.Ltd.</span> <span>All rights resevred.</span></p>
+               </div>
+          </footer>
+     </div>
+</body>
+</html>

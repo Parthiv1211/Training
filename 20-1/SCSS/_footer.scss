@@ -1,0 +1,22 @@
+footer
+{
+     margin-top: auto;
+     text-align: center;
+}
+footer > div
+{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px;
+     background-color:#E0E1E1;
+}
+footer > div > p
+{
+     word-spacing: 5px;
+}
+.contact
+{
+     color: #1F7A54;
+     font-weight:600;
+}
