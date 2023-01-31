@@ -1,0 +1,70 @@
+<app-header></app-header>
+
+<div class="routing-tab">
+     <a routerLink=""><img src="../../../../assets/back.svg" alt=""></a>
+     <h2>Create an Account</h2>
+     <div>
+          <a routerLink="" class="btn btn-success" role="button">CANCLE</a>
+          <button disabled class="btn btn-success" role="button">CREATE</button>
+     </div>
+</div>
+
+
+<div id="progress">
+     <div><div id="active">1</div><div>Personal Information</div></div>
+     <div><div class="inactive">2</div><div>Qualifications</div></div>
+     <div><div class="inactive">3</div><div>Review and Proceed</div></div>
+</div>
+
+
+
+<div id="main-container">
+     <form #personaldetail="ngForm" (ngSubmit)="FormSubmit(personaldetail.value)">
+          <div class="input">
+               <div class="img">
+                    <img src="../../../../assets/profile.svg" alt="">
+                    <br>
+                    <a href="">Upload display picture</a>
+                    <p>Max photo size : 5 MB</p>
+               </div>
+               <label for="firstname">First Name*</label><br>
+               <input ngModel name="firstname" type="text" placeholder="firstname"><br>
+               <label for="lastname">Last Name*</label><br>
+               <input ngModel name="lastname" type="text" placeholder="lastname*"><br>
+               <label for="email">Email*</label><br>
+               <input ngModel name="email" type="email" placeholder="email*"><br>
+               <label for="phone-number">Phone number*</label><br>
+               <input ngModel name="phone-number" type="text" ><br>
+               
+               <img src="../../../../assets/Upload_black_24dp.svg" alt=""> UPLOAD RESUME<br><br>
+               
+               <label for="url">Enter Portfolio URL (if any)</label><br>
+               <input ngModel name="url" type="text" ><br>
+
+               <fieldset>      
+                    <label  ngModel for="job">Preferred Job Roles*</label><br>    
+                    <input  type="checkbox" name="job" value="Instructional Designer">Instructional Designer<br>      
+                    <input  type="checkbox" name="job" value="Software Engineer">Software Engineer<br>      
+                    <input  type="checkbox" name="job" value="Software Quality Engineer">Software Quality Engineer<br>      
+                    <br>      
+                </fieldset>   
+               
+
+               <br>
+               <label for="refer">If You Are Registering Via A Referral, Please Mention Full Name Of The Employee Who Referred You</label><br>
+               <input ngModel name="refer" type="text" ><br>
+
+               <fieldset>
+                    <input ngModel type="checkbox" name="subscription" value="Instructional Designer">Send me job related updates via mail<br>
+               </fieldset>
+
+
+          </div>
+     </form>
+</div>
+
+
+<button id="next"  routerLink="/signup/page2" (click)="FormSubmit(personaldetail.value)">Next
+
+
+<router-outlet></router-outlet>

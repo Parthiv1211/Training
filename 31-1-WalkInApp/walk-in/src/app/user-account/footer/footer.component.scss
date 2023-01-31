@@ -1,0 +1,44 @@
+footer
+{
+     // position: absolute;
+     // bottom: 0;
+     margin-top: auto;
+     
+     width: 100%;
+     text-align: center;
+}
+footer > div
+{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 10px;
+     background-color:#E0E1E1;
+}
+footer > div > p
+{
+     word-spacing: 5px;
+}
+
+footer > div > div
+{
+     display: flex;
+     margin-top: 20px;
+}
+.contact
+{
+     color: #1F7A54;
+     font-weight:600;
+     text-decoration: none;
+}
+
+#footer_vertical
+{
+     font-size: 30px; opacity: 0.1; margin: 0px 10px;
+}
+
+#footer_bold
+{
+     font-family: 'Quicksand-Bold';
+     font-weight: 600;
+}

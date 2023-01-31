@@ -1,0 +1,75 @@
+.routing-tab
+{
+     display: flex;
+     justify-content: space-between;align-items: center;
+     color:#FFFFFF;
+     background-color: #2a598e;
+     div
+     {
+          display: flex;
+          justify-content: space-around;
+
+          button
+          {
+               color: black;
+          }
+     }
+}
+
+
+#progress
+{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #FFFFFF;
+     margin: 20px;
+     padding: 20px;
+
+     div
+     {
+          display: flex;
+          margin-left: 10px;
+          align-items: center;
+
+          #active,.inactive
+          {
+               background-color: #3FD28B;
+               padding: 10px;
+               border-radius: 45%;
+          }
+          #active
+          {
+               img
+               {
+                    height: 15px;
+                    width: 15px;
+               }
+          }
+          .inactive
+          {
+               color: #FFFFFF;
+               background-color: #757575;
+          }
+     }
+}
+
+#education
+{
+     margin: 20px;
+     .toggle-heading
+     {
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          background-color: #DBEFFF;
+     
+          button
+          {
+               border: none;
+               background-color: #DBEFFF;
+               font-size: 30px;
+          }
+     }
+
+}
