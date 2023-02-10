@@ -1,0 +1,128 @@
+mat-card
+{
+     width: 60%;
+     padding: 20px;
+     margin: 30px auto;
+
+     #expired
+     {
+          display: block;
+          margin-left: auto;
+          margin-top: -30px;
+          background-color: #FFE4E6;
+          color: #D10107;
+          width: fit-content;
+     }
+
+     span[layout="row"]
+     {
+          opacity: 0.5;
+     }
+
+     #title
+     {
+          color:#1F7A54 ;
+     }
+     #date-heading
+     {
+          color:#666666;
+     }
+
+     #job-role-title
+     {
+          color: #666666;
+     }
+
+     #role-avail
+     {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          
+          #single-job
+          {
+               display: flex;
+               flex-wrap: wrap;
+               img
+               {
+                    padding: 2px;
+                    border: 2px solid;
+                    border-radius: 50%;
+               }
+               span
+               {
+                    margin: 0px 15px;
+               }
+          }
+     }
+
+     #specific-degree
+     {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-top: 20px;
+          
+          #degree
+          {
+               display: flex;
+               flex-wrap: wrap;
+               // flex-grow: 1;
+               margin-right: 5px;
+               
+               p
+               {
+                    background-color: #EEDD6B;
+                    border-radius: 40px;
+                    padding: 0px 10px;
+
+               }
+          }
+     }
+
+     a
+     {
+          text-decoration: none;
+          text-align: center;
+     }
+     button
+     {
+          margin: 0px auto;
+          width: 200px;
+          background-color: #3FD28B;
+          font-size: 14px;
+          margin-top: 10px;
+     }
+}
+#date-location
+{
+     display: flex;
+
+     p > span
+     {
+          margin: 5px;
+          font-size: 20px;
+          opacity: 0.2;
+     }
+
+     span
+     {
+          color:#666666
+     }
+
+     
+     #date-data
+     {
+          font-weight: 500;
+          display: inline-block;
+     }
+     #location-img
+     {
+          display: inline-block;
+          height: 20px;
+          opacity: 0.4;
+          
+     }
+}
+
+

@@ -1,0 +1,161 @@
+<!-- Get specific item to display -->
+<mat-card id="headeritem">
+
+     <span id="expired" *ngIf="role.expired">Expires in 5 days</span>
+     <h2 id="title">{{role.role_title}}</h2>
+
+     <a><button disabled (click)="validate_selection()" routerLink="/login/1/success"id="applybutton">APPLY</button></a>
+
+     <p id="date-heading">Date & Time :</p>
+     <div id="date-location">
+          <p id="date-data">{{role.date.start_date}} to {{role.date.end_date}} <span> | </span> </p>
+          <img id="location-img" src="../../assets/location_on_black_24dp.svg" alt=""> <span>{{role.location}}
+          </span>
+     </div>
+
+     <span layout="row">
+          <hr flex />
+     </span>
+
+
+     <p id="job-role-title">Job Roles :</p>
+     <div id="role-avail">
+          <div id="single-job" *ngFor="let role_spec of role.job_roles">
+               <img *ngIf="role_spec.title==='Instructional Designer'" src="../../assets/Instructional Designer.svg" alt="">
+               <img *ngIf="role_spec.title==='Software Engineer'" src="../../assets/Software Quality Engineer.svg" alt="">
+               <img *ngIf="role_spec.title==='Software Quality Engineer'" src="../../assets/Software Quality Engineer.svg"
+                    alt="">
+               <span>{{role_spec.title}}</span>
+          </div>
+     </div>
+
+     <!-- <div id="specific-degree" *ngIf="role.oppertunity_for.length">
+               <div id="degree" *ngFor="let qualification of role.oppertunity_for">
+                    <p>Internship Opportunity for {{qualification}} Students</p>
+               </div>
+          </div> -->
+
+     <!-- <a [routerLink]=role.id><button mat-stroked-button>VIEW MORE DETAILS</button></a> -->
+
+
+     <mat-expansion-panel id="process_panel" (opened)="application_process_panel = true"
+          (closed)="application_process_panel = false">
+          <mat-expansion-panel-header>
+               <mat-panel-title>
+                    Pre-requisites & Application Process
+               </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <div class="content">
+               <h4>General Instructions :</h4>
+               <p>- We have a two–year indemnity for permanent candidates. We will provide training to the selected
+                    candidates. <br>
+                    - Candidates who have appeared for any test held by Zeus Learning in the past 12 months will not be
+                    allowed to appear for this recruitment test.</p>
+
+               <span layout="row">
+                    <hr flex />
+               </span>
+          </div>
+
+          <div class="content">
+               <h4>Instructions for the Exam :</h4>
+               <p>- Candidates are requested to log in half an hour prior to the exam start time as they would need to
+                    capture their image using a web camera. By taking this test, you are permitting the examination
+                    system to capture your video for invigilation purposes. <br>- Candidates would not be able to appear
+                    for the exam if the web camera attached to their system is not functional.<br> - The web camera of
+                    your system must be enabled and must remain switched on throughout the examination. In the event of
+                    non-receipt of a webcam, your examination will be considered null and void.<br> - Candidate's audio
+                    and video will be recorded during the examination and will also be monitored by a live proctor. The
+                    proctor may terminate your exam in case he/she observes any malpractice during the exam.<br> -
+                    Candidates are advised to use their own Laptop/PC with a stable internet connection (min 1 Mbps)
+                    during the exam.<br> - Candidates cannot use an iOS system/device for this exam.</p>
+
+               <span layout="row">
+                    <hr flex />
+               </span>
+          </div>
+
+          <div class="content">
+               <h4>Minimum System Requirements :</h4>
+               <p>- Personal Laptop or Desktop computer in working condition with good quality camera (you can use
+                    Windows 7 and above).<br> - The latest version of Google Chrome Browser only. <br>- Please note that
+                    Internet speed should be minimum 1 Mbps. <br>- Do not use a MacBook or iPad for the proctored exam.
+               </p>
+
+               <span layout="row">
+                    <hr flex />
+               </span>
+          </div>
+
+          <div class="content">
+               <h4>Process :</h4>
+               <p>- Every round is an elimination round. Candidates need to clear all rounds to get selected.
+                    <br><br>Round I : 4th August, 2018 <br> Aptitude Test : 25 Questions <br><br>Round II (Interview) :
+                    4th August, 2018.
+               </p>
+
+
+          </div>
+
+     </mat-expansion-panel>
+
+</mat-card>
+
+
+<mat-card id="timeslot">
+     <h3>Time Slots & Preferences</h3>
+
+     <p>Select a Time Slot :</p>
+     <mat-radio-group  aria-label="Select an option">
+          <mat-radio-button  (click)="callme()" *ngFor="let val of role.time_slot" value={{val.t}}>{{val.t}}</mat-radio-button><br>
+     </mat-radio-group>
+
+     <span layout="row">
+          <hr flex />
+     </span>
+
+     <section class="">
+          <p>Select Your Preference :</p>
+          <p *ngFor="let jrole of role.job_roles" ><mat-checkbox (click)="callme()">{{jrole.title}}</mat-checkbox></p>
+     </section>
+
+     <span layout="row">
+          <hr flex />
+     </span>
+
+     <div id="upload"><img src="../../assets/upload-button.png"
+               style="display:inline-block;width:20px;height: 20px;margin: 10px 10px;"><span>UPLOAD UPDATED
+               RESUME</span></div>
+
+</mat-card>
+
+
+<mat-expansion-panel *ngFor="let jrole of role.job_roles" id="job_panel">
+     <mat-expansion-panel-header>
+          <mat-panel-title>
+               {{jrole.title}}
+          </mat-panel-title>
+     </mat-expansion-panel-header>
+     
+     <br>
+     <h5>Gross compensation package :</h5>
+     <p>{{jrole.salary}}</p>
+
+     <span layout="row">
+          <hr flex />
+     </span>
+     
+     <h5>Role Description :</h5>
+     <p *ngFor="let val of jrole.role">{{val}}</p>
+     
+     <span layout="row">
+          <hr flex />
+     </span>
+
+     <h5>Requirements :</h5>
+     <p *ngFor="let val of jrole.requirements">{{val}}</p>
+
+</mat-expansion-panel>
+
+<br><br>

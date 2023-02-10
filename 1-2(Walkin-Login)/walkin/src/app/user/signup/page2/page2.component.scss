@@ -1,0 +1,116 @@
+#extra {
+  margin: 0px -30px;
+  height: 30px;
+  background-color: #eeeeee;
+}
+
+#page2 {
+  margin: -20px -24px;
+  margin-bottom: -30px;
+  padding: 2px;
+  background-color: #eeeeee;
+
+  .ng-hide:not(.ng-hide-animate) {
+    /* These are just alternative ways of hiding an element */
+    display: block !important;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #navigation_button {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: 0px auto;
+    button {
+      margin: 0px 11px;
+      background-color: #3fd28b;
+      font-size: 14px;
+      padding: 7px 30px;
+      padding-bottom: 10px;
+
+      border: none;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+  }
+  #smallextra {
+    margin: 0px -40px;
+    height: 10px;
+    background-color: #eeeeee;
+  }
+  #education_panel,
+  #professional_panel {
+    margin: 20px 0px;
+    background-color: #dbefff;
+
+    .lowerwidth {
+      width: 180px;
+    }
+    .halfwidth {
+      width: 49%;
+    }
+
+    #applicant_type {
+      color: #666666;
+      font-size: 12.5px;
+    }
+
+    #college_location_label {
+      font-size: 12.5px;
+    }
+    .bold_txt {
+      font-family: "Quicksand-Bold";
+      font-size: 16px;
+    }
+
+    mat-expansion-panel-header {
+      mat-panel-title {
+        font-size: 16px;
+        font-family: "Quicksand-Bold";
+      }
+    }
+  }
+}
+
+.mat-mdc-radio-button.mat-accent {
+  --mdc-radio-disabled-selected-icon-color: #000;
+  --mdc-radio-disabled-unselected-icon-color: #000;
+  --mdc-radio-unselected-focus-icon-color: #212121;
+  --mdc-radio-unselected-hover-icon-color: #212121;
+  --mdc-radio-unselected-icon-color: rgba(0, 0, 0, 0.54);
+  --mdc-radio-unselected-pressed-icon-color: rgba(0, 0, 0, 0.54);
+  --mdc-radio-selected-focus-icon-color: #1f7a54;
+  --mdc-radio-selected-hover-icon-color: #1f7a54;
+  --mdc-radio-selected-icon-color: #1f7a54;
+  --mdc-radio-selected-pressed-icon-color: #1f7a54;
+  --mat-mdc-radio-ripple-color: #000;
+  --mat-mdc-radio-checked-ripple-color: ##1f7a54;
+}
+
+mat-label {
+  color: #666666;
+  font-size: 13px;
+}
+
+mat-form-field {
+  mat-label {
+    color: #666666;
+    font-size: 13px;
+  }
+}
+.mat-expansion-panel-content {
+  .mat-expansion-panel-body {
+    background-color: #ffffff;
+  }
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: #ffffff;
+}
+
+.mat-mdc-form-field-focus-overlay {
+  background-color: #ffffff;
+}
+

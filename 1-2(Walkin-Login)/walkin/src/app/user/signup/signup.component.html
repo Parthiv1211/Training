@@ -1,0 +1,43 @@
+<div id="heading">
+  <a href="#"><img src="../../../assets/back.svg" alt=""></a>
+  <div>Create An Account</div>
+  <div id="btn">
+    <button>CANCLE</button>
+    &nbsp;&nbsp;
+    <button id="create_acc" type="button" [disabled]="disabled">CREATE</button>
+    
+  </div>
+</div>
+
+
+
+<mat-stepper linear #stepper>
+  
+  
+  <mat-step [completed]="isCompleted" [stepControl]="firstFormGroup" [editable]="isEditable" >
+    <ng-template   matStepLabel><span id="stepper_heading"(click)="dis_btn()">Personal Information</span></ng-template>
+    <app-page1 (newItemEvent)="addItem1($event)"></app-page1>
+  </mat-step>
+  
+  <mat-step [completed]="isCompleted" [stepControl]="secondFormGroup" [editable]="isEditable">
+    <ng-template matStepLabel><span  id="stepper_heading" (click)="dis_btn()">Qualifications</span></ng-template>
+    <app-page2 (newItemEvent)="addItem2($event)"></app-page2>
+  </mat-step>
+  
+  <mat-step>
+    <ng-template matStepLabel><span id="stepper_heading">Review and Proceed</span></ng-template>
+    <app-page3 [firstFormGroup]="firstFormGroup"  [secondFormGroup]="secondFormGroup"></app-page3>
+    
+
+    <!-- <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div> -->
+  </mat-step>
+
+
+  
+
+  
+
+</mat-stepper>

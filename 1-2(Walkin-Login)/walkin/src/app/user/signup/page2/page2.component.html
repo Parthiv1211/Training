@@ -1,0 +1,183 @@
+<div id="extra"></div>
+
+<form id="page2" [formGroup]="secondFormGroup">
+
+     <mat-expansion-panel id="education_panel">
+          <mat-expansion-panel-header>
+               <mat-panel-title>
+                    Educational Qualifications
+               </mat-panel-title>
+          </mat-expansion-panel-header>
+
+          <mat-form-field appearance="fill">
+               <mat-label>Aggregate Percentage</mat-label>
+               <input required class="lowerwidth" matInput formControlName="percentage">
+          </mat-form-field>
+
+          <br>
+          <mat-form-field appearance="fill">
+               <mat-label>Year of Passing</mat-label>
+               <mat-select class="bold_txt" required formControlName="passing_year" class="lowerwidth">
+                    <mat-option value="2020"> 2020</mat-option>
+                    <mat-option value="2019"> 2019</mat-option>
+                    <mat-option value="2018"> 2018</mat-option>
+               </mat-select>
+          </mat-form-field>
+
+          <br>
+          <mat-form-field class="halfwidth" appearance="fill">
+               <mat-label>Qualification</mat-label>
+               <mat-select required formControlName="qualification">
+                    <mat-option value="Bachelor in Technology (B.Tech)"> Bachelor in Technology (B.Tech)</mat-option>
+                    <mat-option value="B.E"> B.E</mat-option>
+                    <mat-option value="Other"> Other</mat-option>
+               </mat-select>
+          </mat-form-field>
+
+          &nbsp;&nbsp;
+
+          <mat-form-field class="halfwidth" appearance="fill">
+               <mat-label>Stream</mat-label>
+               <mat-select required formControlName="stream">
+                    <mat-option value="Information Technology"> Information Technology</mat-option>
+                    <mat-option value="CSE"> CSE</mat-option>
+                    <mat-option value="Other"> Other</mat-option>
+               </mat-select>
+          </mat-form-field>
+
+          <mat-form-field class="halfwidth" appearance="fill">
+               <mat-label>College</mat-label>
+               <mat-select required formControlName="college_name">
+                    <mat-option value="Pune Institute of Technology (PIT)"> Pune Institute of Technology
+                         (PIT)</mat-option>
+                    <mat-option value="Other"> Other</mat-option>
+               </mat-select>
+          </mat-form-field>
+
+          &nbsp;&nbsp;
+
+          <mat-form-field class="halfwidth" appearance="fill">
+               <mat-label>If others, please enter your college name</mat-label>
+               <input formControlName="other_college_name" matInput>
+          </mat-form-field>
+
+
+          <mat-form-field appearance="fill">
+               <mat-label id="college_location_label" >Where is your college located?</mat-label>
+               <input required formControlName="college_location" matInput>
+          </mat-form-field>
+
+
+     </mat-expansion-panel>
+
+     <mat-expansion-panel id="professional_panel">
+          <mat-expansion-panel-header>
+               <mat-panel-title>
+                    Professional Qualifications
+               </mat-panel-title>
+          </mat-expansion-panel-header>
+          <br>
+          <label id="applicant_type">Applicant Type*</label>
+          <br><br>
+          <mat-radio-group formControlName="type_of_applicant" aria-label="Select an option">
+               <mat-radio-button (click)="radiochange()" value="Fresher"><span class="bold_txt">Fresher</span></mat-radio-button>
+               <mat-radio-button checked (click)="radiochange()" value="Experienced"><span class="bold_txt">Experienced</span></mat-radio-button><br>
+          </mat-radio-group>
+          <br>
+
+          <div id="smallextra"></div>
+
+          <mat-form-field *ngIf="!Fresher" appearance="fill">
+               <mat-label>Years of Experience*</mat-label>
+               <input formControlName="experience" matInput>
+          </mat-form-field>
+          <br *ngIf="!Fresher">
+          <mat-form-field *ngIf="!Fresher" appearance="fill">
+               <mat-label>Current CTC* (In Rupees)*</mat-label>
+               <input formControlName="current_ctc" matInput>
+          </mat-form-field>
+          <br *ngIf="!Fresher">
+          <mat-form-field *ngIf="!Fresher" appearance="fill">
+               <mat-label>Expected CTC* (In Rupees)</mat-label>
+               <input formControlName="expected_ctc" matInput>
+          </mat-form-field>
+          <br *ngIf="!Fresher">
+          <br *ngIf="!Fresher">
+          <mat-label *ngIf="!Fresher">Select All The Technologies You Expertise In*</mat-label>
+          <br *ngIf="!Fresher"><br *ngIf="!Fresher">
+          <section *ngIf="!Fresher" class="example-section">
+               <mat-checkbox formControlName="e_Javascript" ><span class="bold_txt">Javascript</span></mat-checkbox><br>
+               <mat-checkbox formControlName="e_Angular_JS" ><span class="bold_txt">Angular JS</span></mat-checkbox><br>
+               <mat-checkbox formControlName="e_React" ><span class="bold_txt">React</span></mat-checkbox><br>
+               <mat-checkbox formControlName="e_Node_JS" ><span class="bold_txt">Node JS</span></mat-checkbox><br>
+               <mat-checkbox formControlName="e_Others" ><span class="bold_txt">Others</span></mat-checkbox><br>
+          </section>
+
+          <mat-form-field class="halfwidth" *ngIf="!Fresher" appearance="fill">
+               <mat-label>If others, please mention</mat-label>
+               <input formControlName="e_Others" matInput>
+          </mat-form-field>
+          <br><br>
+          <mat-label>Select All The Technologies You Are Familiar In</mat-label>
+          <br><br>
+          <section class="example-section">
+               <mat-checkbox formControlName="f_Javascript" ><span class="bold_txt">Javascript</span></mat-checkbox><br>
+               <mat-checkbox formControlName="f_Angular_JS" ><span class="bold_txt">Angular JS</span></mat-checkbox><br>
+               <mat-checkbox formControlName="f_React" ><span class="bold_txt">React</span></mat-checkbox><br>
+               <mat-checkbox formControlName="f_Node_JS" ><span class="bold_txt">Node JS</span></mat-checkbox><br>
+               <mat-checkbox formControlName="f_Others" ><span class="bold_txt">Others</span></mat-checkbox><br>
+          </section>
+
+          <mat-form-field class="halfwidth" appearance="fill">
+               <mat-label>If others, please mention</mat-label>
+               <input formControlName="f_Others" matInput>
+          </mat-form-field>
+
+          <br><br *ngIf="!Fresher"
+          >
+          <mat-label *ngIf="!Fresher">Are you currently on notice period?*</mat-label>
+          <br>
+          <mat-radio-group formControlName="notice_period" *ngIf="!Fresher" aria-label="Select an option">
+               <mat-radio-button value="Yes"><span class="bold_txt">Yes</span></mat-radio-button>
+               <mat-radio-button checked value="No"><span class="bold_txt">No</span></mat-radio-button><br>
+          </mat-radio-group>
+
+
+          <mat-form-field *ngIf="!Fresher" class="halfwidth">
+               <mat-label>If Yes, when will your notice period end?*</mat-label>
+               <input formControlName="notice_period_end" matInput [matDatepicker]="picker" placeholder="Choose a date">
+               <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+               <mat-datepicker #picker startView="year"></mat-datepicker>
+          </mat-form-field>
+          &nbsp;
+          &nbsp;
+          <mat-form-field *ngIf="!Fresher" class="halfwidth" appearance="fill">
+               <mat-label>How long is your notice period?* (Mention in months)</mat-label>
+               <mat-select formControlName="notice_period_month">
+                    <mat-option value="2 months">2 months</mat-option>
+                    <mat-option value="1 months"> 1 months</mat-option>
+                    <mat-option value="Other"> Other</mat-option>
+               </mat-select>
+          </mat-form-field>
+
+          <br *ngIf="!Fresher"><br *ngIf="!Fresher">
+          <mat-label>Have You Appeared For Any Test By Zeus in the past 12 months?*</mat-label>
+          <br>
+          <mat-radio-group formControlName="previous_test" aria-label="Select an option">
+               <mat-radio-button value="Yes"><span class="bold_txt">Yes</span></mat-radio-button>
+               <mat-radio-button checked value="No"><span class="bold_txt">No</span></mat-radio-button><br>
+          </mat-radio-group>
+
+          <mat-form-field class="halfwidth" appearance="fill">
+               <mat-label>If Yes, which role did you apply for?</mat-label>
+               <input formControlName="previous_test_role" matInput>
+          </mat-form-field>
+
+
+     </mat-expansion-panel>
+
+     <div id="navigation_button">
+          <button matStepperPrevious>PREVIOUS</button>
+          <button (click)="getdata(secondFormGroup.value)" matStepperNext>NEXT</button>
+     </div>
+</form>

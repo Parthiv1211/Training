@@ -1,0 +1,224 @@
+
+#headeritem
+{
+     box-shadow: #0000003D 0px 4px 6px;
+     width: 60%;
+     padding: 20px;
+     margin: 30px auto;
+
+     #expired
+     {
+          display: block;
+          margin-left: auto;
+          margin-top: -35px;
+          background-color: #FFE4E6;
+          color: #D10107;
+          width: fit-content;
+          font-size: 10px;
+     }
+
+     span[layout="row"]
+     {
+          opacity: 0.5;
+     }
+
+ 
+     #date-heading
+     {
+          color:#666666;
+     }
+
+     #job-role-title
+     {
+          color: #666666;
+     }
+
+     #role-avail
+     {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 5px;
+          
+          #single-job
+          {
+               display: flex;
+               flex-wrap: wrap;
+               img
+               {
+                    padding: 2px;
+                    border: 2px solid;
+                    border-radius: 50%;
+               }
+               span
+               {
+                    margin: 0px 15px;
+                    color: #1F7A54;
+               }
+          }
+     }
+
+     #specific-degree
+     {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-top: 20px;
+          
+          #degree
+          {
+               display: flex;
+               flex-wrap: wrap;
+               // flex-grow: 1;
+               margin-right: 5px;
+               
+               p
+               {
+                    background-color: #EEDD6B;
+                    border-radius: 40px;
+                    padding: 0px 10px;
+
+               }
+          }
+     }
+
+     a
+     {
+          text-decoration: none;
+          text-align: center;
+          margin-top: 10px;
+     }
+     button
+     {
+          margin: 0px auto;
+          width: 200px;
+          background-color: #3FD28B;
+          font-size: 12px;
+          
+     }
+     #applybutton
+     {
+          border: none;
+          width: fit-content;
+          float: right;
+          margin-top: -55px;
+          border-radius: 3px;
+          padding: 10px 15px;
+          font-weight: 600;
+     }
+     #process_panel
+     {
+          margin: 20px -20px;
+          margin-bottom: -20px;
+          background-color: #DBEFFF;
+          .content > h4
+          {
+               margin: 10px 0px;
+               color: #666666;
+               font-size: 12px;
+          }
+
+          .content > p
+          {
+               font-size: 14px;
+               color: black;
+               font-weight: 400;
+          }
+     }
+     .mat-expansion-panel-content
+     {
+          
+          .mat-expansion-panel-body
+          {
+               background-color: #ffffff;
+          }
+     }
+}
+#date-location
+{
+     display: flex;
+
+     p > span
+     {
+          margin: 5px;
+          font-size: 20px;
+          opacity: 0.2;
+     }
+
+     span
+     {
+          color:#666666
+     }
+
+     
+     #date-data
+     {
+          font-weight: 500;
+          display: inline-block;
+     }
+     #location-img
+     {
+          display: inline-block;
+          height: 20px;
+          opacity: 0.4;
+          
+     }
+}
+
+#timeslot
+{
+     box-shadow: #0000003D 0px 4px 6px;
+     width: 60%;
+     padding: 20px;
+     margin: 30px auto;
+
+     #upload
+     {
+          display: flex;
+          align-items: center;
+          color: #1F7A54;
+          font-weight: 500;
+     }
+
+     
+}
+
+.mat-mdc-card
+{
+     .mat-mdc-radio-group
+     {
+          display: flex;
+          flex-direction: column;
+     }
+
+}
+
+#job_panel
+{
+     box-shadow: #0000003D 0px 4px 6px;
+     width: 60%;
+     margin: 30px auto;
+     // margin-bottom: 200px;
+     background-color: #DBEFFF;
+     .mat-expansion-panel-content
+     {
+          
+          .mat-expansion-panel-body
+          {
+               background-color: #ffffff;
+          }
+     }
+
+     h5
+     {
+          color:#666666;
+          font-weight: 500;
+     }
+     p
+     {
+          color: black;
+          font-weight: 500;
+     }
+
+}
+

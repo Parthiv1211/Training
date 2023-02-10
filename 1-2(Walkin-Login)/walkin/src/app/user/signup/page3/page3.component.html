@@ -1,0 +1,158 @@
+<div id="p3_heading">
+     <span class="p3_bold_txt">Personal Information</span>
+     <button matStepperPrevious><button class="p3_bold_txt" id="btn_edit" matStepperPrevious><img
+                    src="../../../../assets/pencil-edit-button-svgrepo-com.svg"
+                    alt=""><span>Edit</span></button></button>
+</div>
+
+<div class="data">
+     <p class="p3_label_txt">First Name</p>
+     <p class="p3_bold_txt">{{firstFormGroup.fname}}</p>
+     <br>
+     <p class="p3_label_txt">Last Name</p>
+     <p class="p3_bold_txt">{{firstFormGroup.lname}}</p>
+     <br>
+     <p class="p3_label_txt">Email</p>
+     <p class="p3_bold_txt">{{firstFormGroup.email}}</p>
+     <br>
+     <p class="p3_label_txt">Phone Number</p>
+     <p class="p3_bold_txt">+ 91 {{firstFormGroup.p_number}}</p>
+     <br>
+     <p><img id='upload_img' src="../../../../assets/upload-button.png" alt=""> <span class="p3_bold_txt"
+               style="font-size: 14px;"> UPLOAD RESUME </span> <span class="p3_bold_txt">&nbsp;&nbsp;
+               MyResume.pdf</span></p>
+
+     <br>
+     <p class="p3_label_txt">Enter Portfolio URL (if any)</p>
+     <p class="p3_bold_txt">{{firstFormGroup.url}}</p>
+     <br>
+     <p class="p3_label_txt">Preferred Job Roles</p>
+     <p *ngIf="firstFormGroup.instructional" class="p3_bold_txt">Instructional Designer</p>
+     <p *ngIf="firstFormGroup.software" class="p3_bold_txt">Software Engineer</p>
+     <p *ngIf="firstFormGroup.quality" class="p3_bold_txt">Software Quality Engineer</p>
+
+     <br>
+     <p class="p3_label_txt">If You Are Registering Via A Referral, Please Mention Full Name Of The Employee Who
+          Referred You</p>
+     <p class="p3_bold_txt">{{firstFormGroup.referral}}</p>
+
+     <br>
+     <mat-checkbox [checked]="firstFormGroup.subscription"><span class="p3_bold_txt" style="font-size: 14px;">Send me
+               job related updates via mail</span></mat-checkbox>
+</div>
+
+<div id="p3_heading">
+     <span class="p3_bold_txt">Qualifications</span>
+     <button id="btn_edit" matStepperPrevious class="p3_bold_txt"><img
+               src="../../../../assets/pencil-edit-button-svgrepo-com.svg" alt=""><span>Edit</span></button>
+</div>
+
+
+<div class="p3_qualification_heading p3_bold_txt">
+     Educational Qualifications
+</div>
+
+<div class="data">
+     <p class="p3_label_txt">Aggregate Percentage</p>
+     <p class="p3_bold_txt">{{secondFormGroup.percentage}}</p>
+     <br>
+     <p class="p3_label_txt">Year of Passing</p>
+     <p class="p3_bold_txt">{{secondFormGroup.passing_year}}</p>
+     <br>
+     <div class="full_width">
+          <div class="half_width">
+               <p class="p3_label_txt ">Qualification</p>
+               <p class="p3_bold_txt ">{{secondFormGroup.qualification}}</p>
+          </div>
+          <div class="half_width">
+               <p class="p3_label_txt ">Stream</p>
+               <p class="p3_bold_txt ">{{secondFormGroup.stream}}</p>
+          </div>
+     </div>
+
+     <br><br>
+
+     <div class="full_width">
+          <div class="half_width">
+               <p class="p3_label_txt ">College</p>
+               <p class="p3_bold_txt ">{{secondFormGroup.college_name}}</p>
+          </div>
+          <div class="half_width">
+               <p class="p3_label_txt ">If others, please enter your college name</p>
+               <p class="p3_bold_txt ">{{secondFormGroup.other_college_name}}</p>
+          </div>
+     </div>
+
+     <br>
+     <br>
+
+     <p class="p3_label_txt">Where is your college located?</p>
+     <p class="p3_bold_txt">{{secondFormGroup.college_location}}</p>
+     <br>
+
+
+</div>
+
+<div id="extra_div"></div>
+
+<div class="p3_qualification_heading p3_bold_txt">
+     Professional Qualifications
+</div>
+
+<div class="data">
+     <p class="p3_label_txt">Applicant Type</p>
+     <p class="p3_bold_txt">{{secondFormGroup.type_of_applicant}}</p>
+     <br>
+</div>
+
+<div id="p3_smallextra"></div>
+
+<div class="data" id="last_data">
+     <p class="p3_label_txt">Years of Experience</p>
+     <p class="p3_bold_txt">{{secondFormGroup.experience}}</p>
+     <br>
+     <p class="p3_label_txt">Current CTC (In Rupees)</p>
+     <p class="p3_bold_txt">{{secondFormGroup.current_ctc}}</p>
+     <br>
+     <p class="p3_label_txt">Expected CTC (In Rupees)</p>
+     <p class="p3_bold_txt">{{secondFormGroup.expected_ctc}}</p>
+     <br>
+     <p class="p3_label_txt">Select All The Technologies You Expertise In</p>
+     <p class="p3_bold_txt" *ngIf="secondFormGroup.e_Javascript ">Javascript</p>
+     <p class="p3_bold_txt" *ngIf="secondFormGroup.e_Angular_JS ">Angular JS</p>
+     <p class="p3_bold_txt" *ngIf="secondFormGroup.e_React">React</p>
+     <p class="p3_bold_txt" *ngIf="secondFormGroup.e_Node_JS ">Node JS</p>
+
+     <p class="p3_label_txt">If others, please mention</p>
+     <p class="p3_bold_txt" *ngIf="secondFormGroup.e_Others"> {{secondFormGroup.e_Others}} </p>
+     <br>
+
+     <p class="p3_label_txt">Select All The Technologies You are familiar In</p>
+     <p class="p3_bold_txt" *ngIf="secondFormGroup.f_Javascript ">Javascript</p>
+     <p class="p3_bold_txt" *ngIf="secondFormGroup.f_Angular_JS ">Angular JS</p>
+     <p class="p3_bold_txt" *ngIf="secondFormGroup.f_React">React</p>
+     <p class="p3_bold_txt" *ngIf="secondFormGroup.f_Node_JS ">Node JS</p>
+
+     <p class="p3_label_txt">If others, please mention</p>
+     <p class="p3_bold_txt" *ngIf="secondFormGroup.f_Others"> {{secondFormGroup.f_Others}} </p>
+     <br>
+
+     <p class="p3_label_txt">Are you currently on notice period?</p>
+     <p class="p3_bold_txt"> {{secondFormGroup.notice_period}} </p>
+     <br>
+     <p class="p3_label_txt">If Yes, when will your notice period end?</p>
+     <p class="p3_bold_txt"> {{secondFormGroup.notice_period_end}} </p>
+     <br>
+     <p class="p3_label_txt">How long is your notice period? (Mention in months)</p>
+     <p class="p3_bold_txt"> {{secondFormGroup.notice_period_month}} </p>
+     <br>
+     <p class="p3_label_txt">Have You Appeared For Any Test By Zeus in the past 12 months?</p>
+     <p class="p3_bold_txt"> {{secondFormGroup.previous_test}} </p>
+     <br>
+     <p class="p3_label_txt">If Yes, which role did you apply for?</p>
+     <p class="p3_bold_txt"> {{secondFormGroup.previous_test_role}} </p>
+     <br>
+
+</div>
+
+<button id="last_page_button" matStepperPrevious>PREVIOUS</button>

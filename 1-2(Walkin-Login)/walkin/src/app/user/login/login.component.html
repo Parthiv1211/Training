@@ -1,0 +1,44 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <h2 id="heading">Log in</h2>
+  </mat-card-header>
+
+  <mat-card-content>
+    <form #loginform="ngForm" (ngSubmit)="validatelogin(loginform.value)">
+      <input ngModel type="email" name="email" placeholder="Email ID*" required />
+
+      <br />
+      <a href="#" id="forgot">FORGOT EMAIL ID ?</a>
+      <br />
+
+
+
+
+      <input id="password_inp" placeholder="Password*" matInput [type]="showPassword ? 'text' : 'password'"
+        name="password" required />
+      <mat-icon id="password_icon" matSuffix (click)="togglePasswordVisibility()">
+        {{ showPassword ? "visibility" : "visibility_off" }}
+      </mat-icon>
+      <hr>
+
+      <a href="#" id="forgot">FORGOT PASSWORD ? </a>
+      <br /><br />
+
+      <mat-checkbox ngModel name="remember" [color]="green" disableRipple class="example-margin"><span>
+        Remember
+          Me
+      </span></mat-checkbox>
+
+      <br />
+      <br />
+
+      <button class="login">LOG IN</button>
+
+      <p id="not_register">Not Registerd yet ?</p>
+      <a routerLink="signup">CREATE AN ACCOUNT</a>
+      <br />
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<p id="footer">About<span>|</span>Contact Us</p>

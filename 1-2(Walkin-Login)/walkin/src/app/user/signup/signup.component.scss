@@ -1,0 +1,54 @@
+#heading {
+  display: flex;
+  padding: 10px 25px;
+  align-items: center;
+  color: #ffffff;
+  background-color: #3c4e62;
+  justify-content: space-between;
+  font-size: 16px;
+  // font-family:'Qu';
+  // font-weight: bold;
+  img
+  {
+    filter: brightness(2);
+  }
+
+  div > button {
+    background-color: #3fd28b;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  button:disabled
+  {
+    opacity: 0.5;
+  }
+}
+
+
+.mat-step-header {
+  .mat-step-icon {
+    height: 32px;
+    width: 32px;
+  }
+  .mat-step-icon-selected {
+    background-color: #3fd28b;
+    color: #000000;
+  }
+  .mat-step-label {
+    font-size: 16px;
+  }
+}
+
+#last_page_button
+{
+  margin-bottom: -60px;
+  background-color: #3fd28b;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}

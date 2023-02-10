@@ -23,8 +23,32 @@
           <button (click)="toggle_eduction()">^</button>
      </div>
 
+     <!-- #personaldetail="ngForm" (ngSubmit)="FormSubmit(personaldetail.value)" -->
+
      <div *ngIf="education_form">
-          Click on Right Side arrow to Toggle content
+          <form >
+               <div class="input">
+                    <label for="percentage">Aggregate Percentage*</label><br>
+                    <input ngModel name="percentage" type="text" placeholder="percentage"><br>
+
+                    <label for="passing_year">Year of Passing*</label><br>
+                    <select name="passing_year" id="passing_year">
+                         <option value="2022">2022</option>
+                         <option value="Other">Other</option>
+                    </select>
+                        
+                    <br><br>
+                    <label for="edu_qualification">Qualification*</label><br>
+                    <select name="edu_qualification" id="edu_qualification">
+                         <option value="Bachelor in Technology (B.Tech)">Bachelor in Technology (B.Tech)</option>
+                         <option value="Other">Other</option>
+                    </select>
+
+
+
+
+               </div>
+          </form>
      </div>
 </div>
 

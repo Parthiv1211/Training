@@ -1,0 +1,71 @@
+<div id="extra"></div>
+<form id="page1" [formGroup]="firstFormGroup">
+
+     <mat-form-field appearance="fill">
+          <mat-label>First Name</mat-label>
+          <input required matInput formControlName="fname">
+     </mat-form-field>
+
+     <div id="profile">
+          <img id="profile" src="../../../assets/profile.png" alt="">
+          <label for="input-file-id" id="file_label">UPLOAD DISPLAY PICTURE<input class="ng-hide"  multiple type="file" /></label>
+          <p>Max. image size: 5 MB</p>
+     </div>
+
+     <br>
+     <mat-form-field appearance="fill">
+          <mat-label>Last Name</mat-label>
+          <input required matInput formControlName="lname">
+     </mat-form-field>
+     <br>
+     <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input required email matInput formControlName="email">
+     </mat-form-field>
+     <br>
+     <br>
+     &nbsp;
+     <label id="phone_label"for="phone_num">Phone Number*</label>
+          <br>
+          <span id="phone_country">+ 91</span>
+          <input required id="phone_num" required matInput formControlName="p_number">
+     <br>
+     <br>
+     
+     
+     <label for="input-file-id" id="file_label"><img id="upload_icon" src="../../../../assets/upload-button.png" alt="">&nbsp;&nbsp;UPLOAD RESUME<input class="ng-hide" id="input-file-id" multiple type="file" /></label>
+
+     <br>
+
+
+     <mat-form-field appearance="fill">
+          <mat-label>Enter Portfolio URL (if any)</mat-label>
+          <input matInput formControlName="url">
+     </mat-form-field>
+     <br>
+     <mat-label>Preferred Job Roles*</mat-label>
+     <br>
+     <br>
+     <mat-checkbox formControlName="instructional" class="example-margin"><span id="check_val">Instructional Designer</span></mat-checkbox>
+     <br>
+     <mat-checkbox formControlName="software" class="example-margin"><span id="check_val">Software Engineer</span></mat-checkbox>
+     <br>
+     <mat-checkbox formControlName="quality" class="example-margin"><span id="check_val">Software Quality Engineer</span></mat-checkbox>
+
+     <br><br>
+
+     <mat-form-field appearance="fill">
+          <mat-label>If You Are Registering Via A Referral, Please Mention Full Name Of The Employee Who Referred
+               You</mat-label>
+          <input matInput formControlName="referral">
+     </mat-form-field>
+
+     <br>
+     <mat-checkbox formControlName="subscription" class="example-margin"><span id="job_email">
+          Send me job related updates via
+               mail
+     </span></mat-checkbox>
+
+     <br>
+     <button (click)="getdata(firstFormGroup.value)" matStepperNext>Next</button>
+</form>

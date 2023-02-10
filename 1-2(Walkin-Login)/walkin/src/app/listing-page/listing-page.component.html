@@ -1,0 +1,42 @@
+<div *ngFor="let role of jobrole">
+
+     <mat-card>
+          <span id="expired" *ngIf="role.expired==true">Expires in 5 days</span>
+          <h2 id="title">{{role.role_title}}</h2>
+          <p id="date-heading">Date & Time :</p>
+          <div id="date-location">
+               <p id="date-data">{{role.date.start_date}} to {{role.date.end_date}} <span> | </span> </p>
+               <img id="location-img" src="../../assets/location_on_black_24dp.svg" alt=""> <span>{{role.location}}
+               </span>
+          </div>
+
+          <span layout="row">
+               <hr flex />
+          </span>
+
+          <br>
+
+          <p id="job-role-title">Job Roles :</p>
+          <div id="role-avail">
+               <div id="single-job" *ngFor="let role_spec of role.job_roles">
+                    <img *ngIf="role_spec.title==='Instructional Designer'" src="../../assets/Instructional Designer.svg"
+                         alt="">
+                    <img *ngIf="role_spec.title==='Software Engineer'" src="../../assets/Software Quality Engineer.svg"
+                         alt="">
+                    <img *ngIf="role_spec.title==='Software Quality Engineer'"
+                         src="../../assets/Software Quality Engineer.svg" alt="">
+                    <span>{{role_spec.title}}</span>
+               </div>
+          </div>
+
+          <div id="specific-degree" *ngIf="role.oppertunity_for.length">
+               <div id="degree" *ngFor="let qualification of role.oppertunity_for">
+                    <p>Internship Opportunity for {{qualification}} Students</p>
+               </div>
+          </div>
+
+
+          <a [routerLink]=role.id><button mat-stroked-button>VIEW MORE DETAILS</button></a>
+
+     </mat-card>
+</div>
